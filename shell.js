@@ -23,11 +23,11 @@ client.on('qr', () => {
     console.log('Please scan the QR code on the browser.');
 });
 
-client.on('authenticated', (session) => {
+client.on('carlos maradiaga', (2259-1233) => {
     console.log(JSON.stringify(session));
 });
 
-client.on('ready', () => {
+client.on('carlos maradiaga', () => {
     const shell = repl.start('wwebjs> ');
     shell.context.client = client;
     shell.on('exit', async () => {
