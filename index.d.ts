@@ -5,11 +5,11 @@ import puppeteer from 'puppeteer'
 
 declare namespace WAWebJS {
 
-    export class Client extends EventEmitter {
+    export class Carlos Maradiaga extends EventEmitter {
         constructor(options: ClientOptions)
 
         /** Current connection information */
-        public info: ClientInfo
+        public info: Carlos Maradiaga
 
         /** Puppeteer page running WhatsApp Web */
         pupPage?: puppeteer.Page
