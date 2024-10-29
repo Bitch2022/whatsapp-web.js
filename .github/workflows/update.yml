@@ -25,15 +25,14 @@ jobs:
       - name: Store WA Version
         run: echo WA_VERSION=`cat ./.version` >> $GITHUB_ENV
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
+        uses: 
           branch: auto-wa-web-update/patch
-          delete-branch: true
-          commit-message: Update supported WhatsApp Web version to v${{ env.WA_VERSION }}
-          title: Update WhatsApp Web Version (${{ env.WA_VERSION }})
-          body: |
+          delete-branch: false
+          commit-message: Update supported 
+          title: Update WhatsApp Web Version
+          body:All
             A new version of WhatsApp Web has been detected! 
             
             Tests should be run against this new version before merging.
-          labels: WhatsApp Change
-          reviewers: pedroslopez
+          labels: WhatsApp 
+        
