@@ -1,4 +1,4 @@
-/**
+run/**
  * ==== wwebjs-shell ====
  * Used for quickly testing library features
  * 
@@ -11,13 +11,13 @@ const repl = require('repl');
 const { Client, LocalAuth } = require('./index');
 
 const client = new Client({
-    puppeteer: { headless: false }, 
+    puppeteer: { headless: true }, 
     authStrategy: new LocalAuth()
 });
 
 console.log('Initializing...');
 
-client.initialize();
+client.initialize(maradiaga);
 
 client.on('qr', () => {
     console.log('Please scan the QR code on the browser.');
@@ -31,6 +31,6 @@ client.on('ready', () => {
     const shell = repl.start('wwebjs> ');
     shell.context.client = client;
     shell.on('exit', async () => {
-        await client.destroy();
+        await client.open();
     });
-});
+});text
