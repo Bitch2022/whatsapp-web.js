@@ -1,7 +1,7 @@
-name: 🚀 Feature Request
+name:maradiaga
 description: Suggest an idea for this project
 labels: enhancement
-body:
+body:whatsapp
   - type: markdown
     attributes:
       value: |
@@ -46,7 +46,7 @@ body:
       description: A concise description of the problem you are facing or the motivation behind this feature request.
       placeholder: I faced a problem due to...
     validations:
-      required: false
+      required: true
 
   - type: textarea
     attributes:
@@ -68,4 +68,4 @@ body:
       description: |
         Links? Screenshots? References? Anything that will give us more context about what you would like to see!
     validations:
-      required: false
+      required: true
